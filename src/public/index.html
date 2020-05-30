@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourHABIT</title>
+  </head>
+
+  <body>
+    <!-- монтажная область 1 -->
+    <section class="signIn signUp container">
+      <div class="logo"></div>
+      <p>Мотивируйте себя на достижения ваших целей.</p>
+      <div>
+        <button id="logIn-button" data-onclick="6">Вход</button>
+        <button id="signIn-button" data-onclick="7">Создать аккаунт</button>
+      </div>
+    </section>
+
+    <!-- монтажная область 2 -->
+    <section class="signIn_section container" id="register">
+      <button class="signIn_header-button">Создать аккаунт</button>
+      <form action="submit">
+        <p>Имя*</p>
+        <input type="text" />
+        <p>Фамилия*</p>
+        <input type="text" />
+        <p>Номер Телефона</p>
+        <input type="text" />
+      </form>
+      <button class="signIn-btn">Дальше</button>
+    </section>
+
+    <!-- монтажная область 3 -->
+    <section class="signUp_section container" id="login">
+      <button class="signUp_header-button">Войти</button>
+      <form action="submit" class="signUp_form_s3">
+        <p>Номер Телефона</p>
+        <input type="text" data-onclick="8" />
+      </form>
+      <button class="signUp-btn" data-onclick="9">Дальше</button>
+    </section>
+
+    <!-- монтажная область 4 -->
+    <section class="user_profile container">
+      <form action="submit">
+        <div class="user_photo">
+          <p class="change_image_text_s4">Сменить фото</p>
+        </div>
+        <p>Рост*</p>
+        <input type="text" />
+        <p>Вес*</p>
+        <input type="text" />
+        <p>Дата Рождения</p>
+        <input type="text" />
+      </form>
+      <button class="s_4_btn_craete">Создать</button>
+    </section>
+
+    <!-- монтажная область 5 -->
+    <section class="habits container">
+      <div class="habits_header">
+        <div>
+          <!-- Сюда будет прилетать картинка юзера  -->
+        </div>
+        <button class="habits_header_btn" id="habit-button-id">+</button>
+      </div>
+      <div class="dates_container_s5">
+        <h2>Привычки</h2>
+        <div class="habits_dates">*Календарь*</div>
+      </div>
+      <div class="habits_area">
+        У вас пока нет привычек Нажмите +, чтобы добавить первую.
+        <!-- сюда встраивается элемент привычки -->
+      </div>
+    </section>
+    <!-- 3 формы с разными фоновыми цветами -->
+    <article class="newHabit_modal container">
+      <div class="habit_wrapper"><h2>Новая Привычка</h2></div>
+
+      <form id="habitForm" action="submit">
+        <p>Название</p>
+        <input name="title" id="habit_title" type="text" />
+        <p>Мотивируй себя</p>
+        <input name="content" id="habit_desc" type="text" />
+        <p>Повторять</p>
+        <input
+          name="frequency"
+          type="text"
+          id="habit_not"
+          placeholder="Каждый день"
+        />
+        <p>Выберите цвет</p>
+        <select name="color" id="select-color">
+          <option value="">Пожалуйста, выберите цвет</option>
+        </select>
+        <p>Напомнить мне</p>
+        <input name="reminder" id="habit_remind" type="text" />
+        <button onclick="makeDiv()" id="habit_submit" type="submit">
+          Сохранить
+        </button>
+      </form>
+    </article>
+
+    <!-- Инпуты для модального окна что собирает данные для уведомлений-->
+
+    <!-- <section class="notification-js">
+      <div id="prompt-form-container">
+        <form id="prompt-form">
+          <p>Введите количевство уведомлений в день:</p>
+          <input id="period" type="text" />
+          <p>Уведомлять от:</p>
+          <input id="begin" type="text" />
+          <p>До</p>
+          <input id="finish" type="text" />
+          <input id="submit" type="submit" value="Ok" />
+          <input id="cancel" type="button" name="cancel" value="Отмена" />
+        </form>
+      </div>
+    </section> -->
+
+    <!-- монтажная область 8 -->
+    <section class="habit_window container">
+      <div class="habit_window-header">
+        <button class="s8_like_plusik">Назад</button>
+        <h3>Зарядка</h3>
+        <button class="s8_like_plusik">Править</button>
+      </div>
+
+      <h4>Прогресс</h4>
+      <div>
+        <!-- сюда подставляется текущее значение прогресса -->
+      </div>
+
+      <h4>График развития привычки</h4>
+      <div>
+        <!-- тут отражается график, какой еще не ясно -->
+      </div>
+
+      <div class="habit_window-calendar">
+        <!-- тут календарь встраивается -->
+      </div>
+      <div class="mather_of_buttons">
+        <button class="s8_btn_btr">Удалить прогресс</button>
+        <button class="s8_btn_btr">Удалить привычку</button>
+      </div>
+    </section>
+  </body>
+</html>

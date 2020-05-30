@@ -1,0 +1,626 @@
+$primary-color: #2e878a;
+
+body {
+  color: $primary-color;
+}
+
+$baseFontSize: 16px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Serif Pro", serif;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.signIn,
+.signIn_section,
+.signUp_section,
+.user_profile,
+.habits,
+.newHabit_modal,
+.habit_window {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  /* padding: 100px 0; */
+  border: 1px solid;
+  height: 566px;
+}
+
+.signIn {
+  background: url(../public/images/mob_bottom2.png);
+}
+
+.logo {
+  display: block;
+  position: relative;
+  width: 319px;
+  margin-bottom: 200px;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  background: url(../public/images/logo_mob.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 254px;
+  height: 79px;
+  top: 55px;
+  left: 10px;
+}
+
+.signIn button {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  padding: 10px 20px;
+  border: 1px solid #400688;
+  border-radius: 16px;
+  background-color: white;
+  font-size: 18px;
+  color: purple;
+}
+
+.signIn p {
+  display: none;
+}
+
+.signIn_section,
+.signUp_section {
+  background: url(../public/images/mob_waves2.png);
+}
+
+.signIn_section p,
+.signUp_section p {
+  color: #400688;
+  margin-bottom: 25px;
+}
+
+.signIn_section input,
+.signUp_section input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.signIn-btn,
+.signUp-btn {
+  color: #400688;
+  border: 1px solid #400688;
+  width: 150px;
+  padding: 10px 20px;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+.signUp-btn {
+  margin-top: 150px;
+}
+
+.signIn_header-button,
+.signUp_header-button,
+.habits_header,
+.habit_window-header {
+  height: 62px;
+  width: 320px;
+  color: floralwhite;
+  margin-bottom: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(107, 82, 165, 1) 1%,
+    rgba(173, 129, 209, 0.5) 60%
+  );
+  border: 0;
+  border-radius: 0 0 15px 15px;
+  font-size: 21px;
+  text-align: left;
+  /* box-shadow: ; */
+  padding-left: 38px;
+  font-family: "Candara";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.user_profile {
+  background: url(../public/images/mob_top.png);
+}
+
+.habits {
+  background: url(../public/images/mob_bottom2.png);
+}
+
+/* .signIn button {
+  height: 33px;
+  width: 186px;
+  margin-left: 70px;
+  color: darkslateblue;
+  font-size: 19px;
+} */
+
+.button_class {
+  height: 62px;
+  width: 320px;
+  color: floralwhite;
+  margin-bottom: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(107, 82, 165, 1) 1%,
+    rgba(173, 129, 209, 0.5) 60%
+  );
+  border: 0;
+  border-radius: 0 0 15px 15px;
+  font-size: 21px;
+  text-align: left;
+  /* box-shadow: ; */
+  padding-left: 38px;
+  font-family: "Candara";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.text {
+  margin-left: 51px;
+  font-size: 20px;
+  color: darkslateblue;
+}
+
+.arms {
+  margin-bottom: 250px;
+  margin-left: 50px;
+  width: 226px;
+  height: 21px;
+  position: relative;
+}
+
+.arms::before {
+  content: "";
+  position: absolute;
+  background-image: url(https://v1.iconsearch.ru/uploads/icons/finalflags/24x24/ukraine-flag.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 1px;
+  left: 1px;
+}
+
+.user_profile input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.user_profile form {
+  padding-top: 100px;
+}
+
+.user_profile {
+  position: relative;
+}
+
+.user_profile form::before {
+  content: "";
+  position: absolute;
+  background-image: url(../public/images/s4_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  left: 110px;
+}
+
+.change_image_text_s4 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.s_4_btn_craete {
+  color: #400688;
+  border: 1px solid #400688;
+  width: 150px;
+  padding: 10px 20px;
+  background-color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.habits_header {
+  bottom: 0px;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.habits h2 {
+  color: #400688;
+}
+
+.habits_area {
+  color: #c6c6c6;
+  width: 160px;
+  display: block;
+  margin: 50px auto;
+  text-align: left;
+}
+
+.habits_header_btn {
+  display: block;
+  background: initial;
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  // padding: 30px;
+  margin: auto;
+  margin-right: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.habits h2 {
+  display: inline-block;
+}
+
+.habits_dates {
+  display: inline-block;
+}
+
+.dates_container_s5 {
+  display: flex;
+  width: 320px;
+  justify-content: space-evenly;
+}
+
+.habit_window {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
+}
+
+.habit_window-header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.s8_like_plusik {
+  display: block;
+  background: initial;
+  border: none;
+  color: white;
+  width: 60px;
+  height: 40px;
+  // padding: 30px;
+  margin: auto;
+  margin: 20px auto;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.habit_window-header h3 {
+  display: block;
+  text-align: center;
+}
+
+.s8_btn_btr {
+  display: block;
+  background: initial;
+  border: none;
+  color: rgb(159, 51, 51);
+  width: 250px;
+  height: 10px;
+  // padding: 30px;
+  // margin: auto;
+  margin: 5px auto;
+  padding: 15px;
+  border-top: 1px solid black;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mather_of_buttons {
+  position: absolute;
+  bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .signIn {
+    // height: 466px;
+    background-image: url(../public/images/desk_bottom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 287px;
+    // padding-top: 350px;
+  }
+
+  .logo {
+    margin-top: 95px;
+  }
+
+  .signIn p {
+    display: inline;
+    font-size: 25px;
+    color: #400688;
+    font-family: "Candara";
+  }
+
+  .signIn div {
+    margin-top: 50px;
+  }
+
+  .signIn button {
+    width: 275px;
+  }
+
+  .signIn_section {
+    background-image: url(../public/images/desk_bottom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+  }
+
+  .signIn_section form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin-bottom: 50px;
+    width: 410px;
+    height: 424px;
+    border-radius: 50px;
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+
+  .signIn_section input {
+    background-color: #f4f4f4;
+    display: block;
+    width: 285px;
+  }
+
+  .signIn_section p {
+    display: block;
+  }
+
+  .signIn-btn {
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+
+  .signIn_header-button,
+  .signUp_header-button,
+  .habits_header,
+  .habit_window-header {
+    height: 60px;
+    width: 768px;
+    color: floralwhite;
+    margin-bottom: 0px;
+    background: linear-gradient(
+      90deg,
+      rgba(107, 82, 165, 1) 1%,
+      rgba(173, 129, 209, 0.5) 60%
+    );
+    border: 0;
+    border-radius: 0 0 15px 15px;
+    font-size: 21px;
+    text-align: left;
+
+    padding-left: 38px;
+    font-family: "Candara";
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .signUp_form_s3 {
+    padding-top: 250px;
+    position: relative;
+    display: block;
+    width: 768px;
+    text-align: center;
+  }
+
+  .signUp_form_s3::before {
+    content: "";
+    position: absolute;
+    background-image: url(../public/images/logo.png);
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    height: 300px;
+    top: 1px;
+    left: 80px;
+  }
+
+  .signUp_section {
+    background-image: url(../public/images/desk_vert-waves.png);
+    // background-image: url(../images/s3_lines.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .signUp-btn {
+    margin-top: 50px;
+    // margin-bottom: 250px;
+  }
+
+  .user_profile {
+    background-image: url(../public/images/desk_waves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .user_profile::before {
+    content: "";
+    position: absolute;
+    background-image: url(../public/images/bg_bottomWave_s4_desktop.png);
+    background-position: center;
+    background-size: cover;
+    width: 768px;
+    height: 350px;
+    z-index: -1;
+    // top: 1px;
+    // left: 1px;
+  }
+
+  .user_profile form::before {
+    // background-image: url(../images/s4_icon_user_tabletka.png);
+    left: 330px;
+  }
+
+  .habits_area {
+    width: 300px;
+    text-align: center;
+  }
+
+  .habits {
+    background-image: url(../public/images/desk_bottom.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    width: 1920px;
+  }
+
+  .user_profile form::before {
+    background-image: url(../public/images/s4_icon_user_desktop.png);
+  }
+}
+
+// *******************************
+.newHabit_modal {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.newHabit_modal form {
+  width: 280px;
+  height: auto;
+}
+
+.newHabit_modal form p {
+  display: block;
+  text-align: center;
+}
+
+.newHabit_modal form input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 30px auto;
+  display: block;
+}
+
+.newHabit_modal h2 {
+  background: rgb(3, 0, 183);
+  width: 320px;
+  height: 30px;
+}
+
+.newHabit_modal button {
+  color: #400688;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 35px;
+  width: 150px;
+  height: 35px;
+}
+
+// ***********************
+
+// ИЛЬЯ
+.notification-js {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#prompt-form {
+  display: inline-block;
+  padding: 25px 25px 25px 25px;
+  width: 200px;
+  border: 1px solid #8348bf;
+  background: white;
+  vertical-align: middle;
+}
+
+#prompt-form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#prompt-form-container:before {
+  display: inline-block;
+  height: 100%;
+  content: "";
+  vertical-align: middle;
+}
+
+#cover-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 0.3;
+}
+
+#period,
+#begin,
+#finish {
+  display: block;
+  margin: 5px;
+  width: 180px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid #8348bf;
+}
+#submit {
+  margin-top: 10px;
+  background-color: #8348bf;
+  box-shadow: none;
+  color: white;
+  border-radius: 5px;
+}
+#cancel {
+  margin-top: 10px;
+  background-color: gray;
+  box-shadow: none;
+  color: white;
+  border-radius: 5px;
+}
+// ИЛЬЯ
