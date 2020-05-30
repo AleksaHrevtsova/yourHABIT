@@ -1,10 +1,10 @@
-$primary-color: #2e878a;
+// $primary-color: #2e878a;
 
-body {
-  color: $primary-color;
-}
+// body {
+//   color: $primary-color;
+// }
 
-$baseFontSize: 16px;
+// $baseFontSize: 16px;
 
 * {
   margin: 0;
@@ -112,11 +112,9 @@ $baseFontSize: 16px;
   width: 320px;
   color: floralwhite;
   margin-bottom: 50px;
-  background: linear-gradient(
-    90deg,
-    rgba(107, 82, 165, 1) 1%,
-    rgba(173, 129, 209, 0.5) 60%
-  );
+  background: linear-gradient(90deg,
+      rgba(107, 82, 165, 1) 1%,
+      rgba(173, 129, 209, 0.5) 60%);
   border: 0;
   border-radius: 0 0 15px 15px;
   font-size: 21px;
@@ -149,11 +147,9 @@ $baseFontSize: 16px;
   width: 320px;
   color: floralwhite;
   margin-bottom: 50px;
-  background: linear-gradient(
-    90deg,
-    rgba(107, 82, 165, 1) 1%,
-    rgba(173, 129, 209, 0.5) 60%
-  );
+  background: linear-gradient(90deg,
+      rgba(107, 82, 165, 1) 1%,
+      rgba(173, 129, 209, 0.5) 60%);
   border: 0;
   border-radius: 0 0 15px 15px;
   font-size: 21px;
@@ -413,11 +409,9 @@ $baseFontSize: 16px;
     width: 768px;
     color: floralwhite;
     margin-bottom: 0px;
-    background: linear-gradient(
-      90deg,
-      rgba(107, 82, 165, 1) 1%,
-      rgba(173, 129, 209, 0.5) 60%
-    );
+    background: linear-gradient(90deg,
+        rgba(107, 82, 165, 1) 1%,
+        rgba(173, 129, 209, 0.5) 60%);
     border: 0;
     border-radius: 0 0 15px 15px;
     font-size: 21px;
@@ -609,6 +603,7 @@ $baseFontSize: 16px;
   border-left: 0;
   border-bottom: 1px solid #8348bf;
 }
+
 #submit {
   margin-top: 10px;
   background-color: #8348bf;
@@ -616,6 +611,7 @@ $baseFontSize: 16px;
   color: white;
   border-radius: 5px;
 }
+
 #cancel {
   margin-top: 10px;
   background-color: gray;
@@ -623,4 +619,5 @@ $baseFontSize: 16px;
   color: white;
   border-radius: 5px;
 }
+
 // ИЛЬЯ
