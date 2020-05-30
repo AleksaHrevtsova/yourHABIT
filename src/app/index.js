@@ -1,8 +1,10 @@
 import "../../src/style/app.scss";
+import "../../src/style/first.scss";
 // import html1 from "../public/pages/1.html";
 // import html2 from "../public/pages/2.html";
 // import html3 from "../public/pages/3.html";
-
+import users from "./users";
+console.log(users);
 // переадрессация на страницы логинизации и регистрации
 document.getElementById("logIn-button").onclick = function () {
   window.location.href = "#login";
